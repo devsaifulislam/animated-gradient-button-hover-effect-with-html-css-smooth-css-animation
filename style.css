@@ -1,3 +1,4 @@
+
 * { box-sizing: border-box; }
 
 body {
@@ -5,26 +6,25 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 5%;
+  padding: 20px;
   background: #0f172a;
   font-family: Arial, sans-serif;
 }
 
 .btn-gradient {
-  width: min(100%, 240px);
+  width: min(100%, 220px);
   padding: 16px 22px;
-  border: none;
+  border: 0;
   border-radius: 12px;
-  color: #fff;
-  font-size: 15px;
+  background: linear-gradient(110deg,
+    #6366f1 0%, #22d3ee 50%, #6366f1 100%);
+  background-size: 200% 100%;
+  color: white;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  background: linear-gradient(
-    120deg, #6366f1, #22d3ee, #6366f1
-  );
-  background-size: 200% 200%;
-  box-shadow: 0 8px 25px #6366f140;
-  transition: background-position .4s ease,
+  box-shadow: 0 8px 24px #6366f144;
+  transition: background-position .6s ease,
               transform .3s ease,
               box-shadow .3s ease;
 }
@@ -36,16 +36,11 @@ body {
 }
 
 .btn-gradient:hover {
-  background-position: 100% 50%;
+  background-position: 100% 0;
   transform: translateY(-4px);
-  box-shadow: 0 14px 35px #6366f180;
+  box-shadow: 0 14px 32px #6366f177;
 }
 
 .btn-gradient:hover span {
-  transform: translateX(5px);
-}
-
-.btn-gradient:focus-visible {
-  outline: 3px solid #ffffff99;
-  outline-offset: 4px;
+  transform: translateX(6px);
 }
